@@ -38,6 +38,21 @@ input: (in the console)
         if it's found in l1 cache ,there is no problem
         if it's not found in either of the caches , then also , there won't be any problem.
    
-   
+Output:
+
+      we printed 1 , if it's a hit in l1_cache , 2 , if it's a hit in the l2_cache , 3 , if we go to the memory 
+      these numbers are seperated by a " # "
+      
+      number of stalls , cycles , instructions are printed in the console
+      IPC (instructions per cycle) is printed
+      
+      l1 cache miss rate and l2 cache miss rate is printed
+      
+           l1 cache miss rate = (l1_misses)/(l1_accesses)
+           l2 cache miss rate = (l2_misses)/(l2_accesses)
+           
+      all the 32 registers and all the memory is also printed at the end
+      
+      
    
 
