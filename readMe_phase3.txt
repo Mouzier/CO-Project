@@ -1,3 +1,5 @@
+any restrictions (applied for our simulator), which are mentioned for the before phases applies here also.
+
 input: (in the console)
    we should enter the file name (should be from the same folder)
    enter 1 to allow forwarding, else 0
@@ -14,8 +16,6 @@ input: (in the console)
    latency values (in sec's)
    associativity must be a number (make sure to enter a number s/t everything goes in sync)
    
-   program runs good when l1 cache block size <= l2 cache block size
-   
    we are using the lru cache replacement policy with 2 levels of cache
    we are using the non-inclusive strategy for maintaining the multi level cache
    
@@ -26,6 +26,8 @@ input: (in the console)
             then we check in the l2 cache
             if it's a hit in the l2 level , we bring it back to the l1 cache.
    l1 and l2 caches use lru replacement policy , independently
+   
+   program runs good when l1 cache block size <= l2 cache block size
    
    when l1 cache block size > l2 cache block size
         then , if something is a miss in l1 cache , then it searches in the l2 cache 
